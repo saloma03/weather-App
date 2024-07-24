@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+
+    <link href="../dist/output.css" rel="stylesheet">
+
+</head>
+<body class="bg-main-color">
+    <navbar>
+        <div class="py-8 bg-main-color w-full text-white">
+            <div class="w-9/12 mx-auto flex justify-between items-center">
+                <div class="flex gap-2 items-center cursor-pointer">
+                    <div class="w-12">
+                        <img src="../assets/logo@2x.png" class="w-full" alt="logo">
+                    </div>
+                    <div class="">
+                        <h2 class="text-lg font-bold">Weather</h2>
+                        <span class="text-xs">tagline goes here</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <ul class="list-none  hidden  lg:flex">
+                        <li class="border-solid border-2 mx-1 rounded-3xl cursor-pointer border-hover-color px-6 py-2 text-hover-color hover:border-hover-color hover:text-hover-color">home</li>
+                        <li class="border-solid border-2 mx-1 rounded-3xl cursor-pointer hover:border-hover-color border-transparent hover:text-hover-color px-6 py-2">news</li>
+                        <li class="border-solid border-2 mx-1 rounded-3xl cursor-pointer hover:border-hover-color border-transparent hover:text-hover-color px-6 py-2">live cameras</li>
+                        <li class="border-solid border-2 mx-1 rounded-3xl cursor-pointer hover:border-hover-color border-transparent hover:text-hover-color px-6 py-2">photos</li>
+                        <li class="border-solid border-2 mx-1 rounded-3xl cursor-pointer hover:border-hover-color border-transparent hover:text-hover-color px-6 py-2">contact</li>
+                    </ul>
+                    <div class="menu lg:hidden border-solid border-2 mx-1 rounded-3xl cursor-pointer hover:border-hover-color border-transparent px-6 py-2">
+                        <i class="fa-solid fa-bars text-white"></i>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="flex-col w-9/12 mx-auto my-5 lg:hidden rounded-md bg-secondary text-center hidden-menu hidden">
+                <ul class="list-none lg:hidden sm:flex sm:flex-col">
+                    <li class="border-solid border-0 border-b-2 py-3 cursor-pointer animate__animated  border-gray text-hover-color ">home</li>
+                    <li class="border-solid border-0 border-b-2 py-3 border-gray   cursor-pointer animate__animated   ">news</li>
+                    <li class="border-solid border-0 border-b-2 py-3 border-gray   cursor-pointer animate__animated    ">live cameras</li>
+                    <li class="border-solid border-0 border-b-2 py-3 border-gray   cursor-pointer animate__animated   ">photos</li>
+                    <li class="  cursor-pointer  py-3  ">contact</li>
+                </ul>
+    
+            </div>
+            
+            
+        </div>
+    </navbar>
+
+    <section>
+
+        <div class="bg-[url('../assets/banner.png')] bg-cover bg-center min-h-72 flex flex-col justify-center items-center bg-main-color">
+                <div class="text-white w-9/12 relative">
+                    <input type="text" class="bg-main-color px-4 py-4 rounded-3xl w-full focus:outline-none search" placeholder="find your location..." >
+                    <button class="absolute right-2  bottom-1/2 translate-y-1/2 px-8 py-3 rounded-3xl cursor-pointer bg-hover-color capitalize">find</button>
+                </div>
+        </div>
+        <div class="w-9/12 mx-auto -translate-y-1/3 text-white rounded-lg">
+            <div class="md:flex justify-center items-stretch rounded-lg min-h-52 bg-secondary" id="forcast">
+        
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="bg-secondary py-8">
+            <div class="w-9/12 mx-auto">
+                <div class="md:flex justify-between items-center">
+                    <div class="text-white md:w-2/3 relative ">
+                        <input type="text" class="bg-main-color px-4 py-4 rounded-3xl w-full focus:outline-none" placeholder="Enter your Email to Subscribe..." >
+                        <button class="absolute right-2  bottom-1/2 translate-y-1/2 px-8 py-3 rounded-3xl cursor-pointer bg-hover-color capitalize">Subscribe!</button>
+                    </div>
+                    <div class="md:w-1/3 py-4 md:py-0 ">
+
+                        <ul class="flex justify-center">
+
+                            <li>
+                                <a href="#">
+                                    <span class="fa-stack fa-lg group">
+                                        <i class="fa-solid fa-circle fa-stack-2x text-main-color group group-hover:text-hover-color"></i>
+                                        <i class="fa-brands fa-facebook-f fa-stack-1x text-hover-color group-hover:text-white"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa-stack fa-lg group">
+                                        <i class="fa-solid fa-circle fa-stack-2x text-main-color group group-hover:text-hover-color"></i>
+                                        <i class="fa-brands fa-twitter fa-stack-1x text-hover-color group-hover:text-white"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa-stack fa-lg group">
+                                        <i class="fa-solid fa-circle fa-stack-2x text-main-color group group-hover:text-hover-color"></i>
+                                        <i class="fa-brands fa-pinterest fa-stack-1x text-hover-color group-hover:text-white"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa-stack fa-lg group">
+                                        <i class="fa-solid fa-circle fa-stack-2x text-main-color group-hover:text-hover-color"></i>
+                                        <i class="fa-brands fa-linkedin fa-stack-1x text-hover-color group-hover:text-white"></i>
+                                    </span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <p class="text-white py-6 text-sm">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
